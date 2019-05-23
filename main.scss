@@ -1,0 +1,38 @@
+:root {
+    --font-title: 9vh;
+    --grad-start: rgb(131, 4, 131);
+    --grad-end: rgb(255, 207, 103);
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--grad-start), var(--grad-end))
+}
+
+p {
+    position: relative;
+    padding: 5px 10px;
+    font: 100 var(--font-title)/1 'Monoton', cursive;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.644);
+    &::after {
+        position: absolute;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: 2vh;
+        color: rgba(255, 255, 255, 0.486);
+        font-family: 'Quicksand', sans-serif;
+    }
+    &::after {
+        content: attr(data-gradStart) + attr(data-gradEnd);
+        top: 100%;
+    }
+}
