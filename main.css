@@ -20,13 +20,13 @@ p {
   font: 100 var(--font-title)/1 "Monoton", cursive;
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.644);
 }
 
 p::after {
   position: absolute;
   display: block;
+  letter-spacing: 1px;
   width: 100%;
   padding: 8px;
   font-size: 2vh;
