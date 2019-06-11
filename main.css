@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  user-select: none;
   height: 100vh;
   overflow: hidden;
   padding: 20px;
